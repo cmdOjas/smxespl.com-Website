@@ -1,3 +1,4 @@
+
 // ================================
 // PAGE NAVIGATION SYSTEM (FIXED)
 // ================================
@@ -230,17 +231,3 @@ function checkService() {
         pipeInput.value = "";
     }
 }
-document.addEventListener("DOMContentLoaded", function () {
-
-  const menuToggle = document.getElementById("mobile-menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-      menuToggle.classList.toggle("active");
-    });
-  }
-
-});
-
