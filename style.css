@@ -1998,3 +1998,14 @@ textarea:focus {
 .contact-form select:focus {
     border-color: #ff3c3c;
 }
+@media (max-width: 768px) {
+
+  .clients-container {
+    gap: 15px;
+  }
+
+  .client-logo {
+    margin: 5px;
+  }
+
+}
