@@ -2009,3 +2009,33 @@ textarea:focus {
   }
 
 }
+/* Hide menu icon on desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+}
