@@ -232,12 +232,13 @@ function checkService() {
 }
 document.addEventListener("DOMContentLoaded", function () {
 
-  const toggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector("nav ul");
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
-  if (toggle && navMenu) {
-    toggle.addEventListener("click", function () {
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", function () {
       navMenu.classList.toggle("active");
+      menuToggle.classList.toggle("active");
     });
   }
 
