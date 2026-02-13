@@ -2067,3 +2067,26 @@ textarea:focus {
     }
 
 }
+@media (max-width: 768px) {
+
+    .home-clients-grid,
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .client-item {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 15px;
+        height: 100px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease;
+    }
+
+    .client-item:active {
+        transform: scale(0.96);
+    }
+
+}
