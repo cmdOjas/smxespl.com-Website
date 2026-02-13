@@ -1998,81 +1998,72 @@ textarea:focus {
 .contact-form select:focus {
     border-color: #ff3c3c;
 }
+/* =========================
+   HOME PAGE MOBILE FIXES
+   ========================= */
 @media (max-width: 768px) {
 
-  .clients-container {
-    gap: 15px;
-  }
+    /* 1️⃣ Fix Company Name Cut Issue */
+    .company-name {
+        font-size: 15px !important;
+        white-space: normal !important;  /* allow wrapping */
+        line-height: 1.3;
+        max-width: 180px;
+    }
 
-  .client-logo {
-    margin: 5px;
-  }
+    .company-tagline {
+        font-size: 11px;
+    }
 
-}
-/* Hide menu icon on desktop */
-.menu-toggle {
-  display: none;
-}
+    .logo img {
+        height: 55px;
+    }
 
-/* Mobile */
-@media (max-width: 768px) {
+    /* 2️⃣ Reduce What We Do Paragraph Size */
+    .what-description {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
 
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
+    /* 3️⃣ Reduce Pan India Description Size */
+    .india-text p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
 
-  nav ul.active {
-    display: flex;
-  }
+    .india-text h2 {
+        font-size: 22px;
+    }
 
-  .menu-toggle {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
+    /* 4️⃣ Fix Home Clients Overlapping */
+    .home-clients-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px !important;
+        padding: 20px 10px;
+    }
 
-}
-@media (max-width: 768px) {
+    .home-clients-grid .client-item {
+        height: auto;
+    }
 
-  .mobile-menu-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #fff;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
+    .home-clients-grid .client-item img {
+        max-width: 120px;
+        max-height: 70px;
+    }
 
 }
 @media (max-width: 768px) {
 
-  .mobile-menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    cursor: pointer;
-  }
+    .clients-grid,
+    .home-clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
 
-}
-.mobile-menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: #000;
-  display: block;
+    .client-item {
+        height: 100px;
+    }
+
 }
