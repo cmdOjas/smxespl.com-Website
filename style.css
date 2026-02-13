@@ -2059,3 +2059,20 @@ textarea:focus {
   }
 
 }
+@media (max-width: 768px) {
+
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+}
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  display: block;
+}
