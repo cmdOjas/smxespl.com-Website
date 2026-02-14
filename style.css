@@ -2092,7 +2092,7 @@ textarea:focus {
     }
 
     .home-clients-grid .client-item img {
-        max-width: 140px;
+        max-width: 120px;
         max-height: 70px;
         object-fit: contain;
     }
