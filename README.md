@@ -1,2 +1,1 @@
-# smxespl.com-Website
-SMX Website
+SMX Electronics Services Pvt. Ltd. official website built using HTML, CSS, and JavaScript. Features responsive design, mobile navigation, dynamic page system, client showcase, service details, and contact form integration. Optimized for performance and professional presentation. Click Here www.smxespl.com to view our website
